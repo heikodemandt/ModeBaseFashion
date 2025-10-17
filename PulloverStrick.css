@@ -1,0 +1,530 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.BackgroundBox {
+    width: 100%;
+    height: 175px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.Header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+    height: 150px; 
+    z-index: 10;
+    background-color: rgb(33, 33, 33);
+}
+
+.Header .MetronomLogo {
+    overflow: hidden;
+}
+
+.Header .MetronomLogo .Logo {
+    width: 150px;
+    height: auto;
+    margin-right: 200px;
+    transform: scale(1.4);
+    
+}
+
+.Header .Header-Headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Header .Header-Headings a {
+    color: rgb(255, 232, 201);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.Header-Headings a:hover {
+  color: #ccc;                  
+}
+
+.nav-link {
+    text-decoration: none; 
+    color: #3e2f1c; 
+    cursor: pointer; 
+}
+
+.Eingabefeld #myCanvas {
+    background-color: rgb(33, 33, 33);
+    position:absolute;
+    top: 200px;
+    left:0px;
+    z-index: 2;
+    width: 100%;
+    margin-top: -75px;
+}
+.Eingabefeld .stadttor {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: -1330px;
+            
+    width: 80%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px / 100px;
+    z-index: 3;
+}
+.Eingabefeld .Suchbegriffe-eingeben {
+    position:absolute;
+    top:120px;
+    left: 175px;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 10;
+    margin-top: -100px;
+    
+}
+.Eingabefeld .ico-search {
+    fill: rgb(255, 255, 255); 
+    position: absolute;
+    top: 115px;
+    right: 160px;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    margin-top: -100px;
+}
+
+.Eingabefeld {
+    display: none;
+}
+
+.Icons-right {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-top:24px;
+    margin-left: 250px;
+}
+
+.Icons-right .Lupe {
+    width: 17px;
+    min-height: auto; 
+    margin-top: -20px;
+    cursor: pointer;
+}
+.Striche {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-left: 50px;
+    height: 20px; 
+}
+
+.Strich1, .Strich2, .Strich3 {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(255, 232, 201);
+    border-radius: 2px;
+}
+.Fenster {
+    position: fixed;         
+    top: 0;
+    right: 0;
+    width: 300px;            
+    height: 100vh;           
+    background-color: rgb(33, 33, 33);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+.Fenster-Kasten a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+    margin-top: 20px;
+}
+
+.Fenster-Kasten a:hover {
+  color: #ccc;
+}
+.Icon-Warenkorb {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    
+    margin-left: 35px;
+}
+.Icon-Warenkorb .Warenkorb {
+    width: 65px;
+    min-height: auto; 
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.Discover-Website-Heading{
+    background-color: rgb(249, 245, 238);
+    width: 100%;
+}
+.Discover-Website {
+    margin-top: 100px;
+    font-size: 36px;
+    font-weight: 100;
+    background-color: rgb(249, 245, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+.Produkte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 500px;
+    gap: 175px;    
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+.Produkte2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 500px;
+    gap: 175px;    
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.Produktkastenlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 600px;
+    gap: 200px;    
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.Produktkastenmitte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 600px;
+    gap: 200px;    
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.Produktkastenrechts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 600px;
+    gap: 200px;    
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.Bild {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transform-origin: center;
+    z-index: -1;
+}
+.Bild06 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.6);
+    transform-origin: center;
+    z-index: -1;
+}
+.Bild065 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.65);
+    transform-origin: center;
+}
+.Bild07 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.7);
+    transform-origin: center;
+}
+.Bild075 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.75);
+    transform-origin: center;
+}
+.Bild08 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.8);
+    transform-origin: center;
+}
+.Bild085 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.85);
+    transform-origin: center;
+}
+.Bild09 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.9);
+    transform-origin: center;
+}
+.Bild095 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.95);
+    transform-origin: center;
+}
+.Bild115 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+    transform-origin: center;
+}
+.Bild13 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    transform-origin: center;
+}
+
+
+.Bild16 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.6);
+    transform-origin: center;
+}
+
+
+
+
+
+
+
+
+.namepreis {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+    gap: 545px;    
+    z-index: 1;
+    margin-bottom: 50px;
+    margin-top: -75px;
+}
+.namepreislinks, .namepreisrechts, .namepreismitte {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start; 
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+}
+.namelinks {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 150px;
+}
+.preislinks {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 150px;
+}
+.namemitte {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 30px;
+}
+.preismitte {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 30px;
+}
+.namerechts {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: -75px;
+}
+.preisrechts {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: -75px;
+}
+
+
+.realpreislinks {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 150px;
+}
+.realpreismitte {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 30px;
+}
+.realpreisrechts {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: -75px;
+}
+
+
+
+
+
+
+
+
+
+.Platzhalter {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    width: 100%;
+}
+.Platzhalter-Kasten {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Impressum {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    width: 100%;
+}
+.Impressum-Kasten {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(33, 33, 33);
+    
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.Impressum-Ueberschriften a{
+    
+    font-weight: 100;
+    
+    transition: color 0.2s ease; 
+    margin-top: 84px;
+    font-size:16px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(255, 232, 201);
+    margin-left: 75px;
+    font-weight: 100;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+
+
+.Impressum-Ueberschriften a:hover {
+  color: #ccc;                 
+}
